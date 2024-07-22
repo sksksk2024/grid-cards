@@ -1,0 +1,26 @@
+@use '../util/' as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: rem(60) rem(20) rem(60) rem(20);
+  
+  &__title1 {
+    font-size: rem(24);
+    font-weight: 200;
+  }
+
+  &__title2 {
+    font-size: rem(24);
+    margin-top: 0;
+  }
+
+  &__p {
+    margin-top: rem(10);
+    min-width: rem(300);
+    max-width: rem(450);
+  }
+}

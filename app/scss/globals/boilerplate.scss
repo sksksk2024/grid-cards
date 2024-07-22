@@ -1,0 +1,40 @@
+@use '../util/' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: var(--veryltgray);
+  height: 100vh;
+  padding: rem(20) rem(10) 0 rem(10);
+
+  footer {
+    font-size: rem(90);
+    margin-top: rem(60);
+    margin-bottom: rem(10);
+  }
+
+  main {
+    @media (min-width: 48em) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: rem(20);
+      width: auto;
+      max-width: rem(1200);
+    }
+  }
+}
